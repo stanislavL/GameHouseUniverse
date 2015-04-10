@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileDetailsViewController">
+            <connections>
+                <outlet property="menuButton" destination="4qp-kJ-Bq2" id="QtI-HE-wU3"/>
+                <outlet property="messageButton" destination="d6Q-I1-Rja" id="W9V-Mt-d3s"/>
+                <outlet property="searchButton" destination="DZe-Cs-unO" id="Qaq-av-TVn"/>
+                <outlet property="settingsButton" destination="3VL-eT-MWF" id="Qb2-vO-0u9"/>
+                <outlet property="tableView" destination="3VU-ZV-JxC" id="SiX-fg-mCH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eb5-Wf-vJF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="QLt-uB-Qiz" userLabel="Image View - topbar">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="100"/>
+                    <color key="backgroundColor" red="1" green="0.40619609400000001" blue="0.1898925933" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark.png" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-Gi-4ae">
+                    <rect key="frame" x="284" y="275" width="200" height="200"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZe-Cs-unO" userLabel="Button - search">
+                    <rect key="frame" x="698" y="34" width="50" height="50"/>
+                    <state key="normal" title="Button" image="search_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressSearchBtn:" destination="-1" eventType="touchUpInside" id="cPI-Pl-l6e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6Q-I1-Rja" userLabel="Button - message">
+                    <rect key="frame" x="584" y="39" width="46" height="45"/>
+                    <state key="normal" image="bubble_btn.png">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressMessageBtn:" destination="-1" eventType="touchUpInside" id="82m-cM-dXd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qp-kJ-Bq2" userLabel="Button - menu">
+                    <rect key="frame" x="12" y="39" width="51" height="39"/>
+                    <state key="normal" title=" " image="menu_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressMenuBtn:" destination="-1" eventType="touchUpInside" id="Zkv-uf-hCP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt7-OD-rGJ" userLabel="Button - WiiUID">
+                    <rect key="frame" x="132" y="415" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kj-FT-6PB" userLabel="Button - OrignID">
+                    <rect key="frame" x="493" y="145" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXn-uC-gsH" userLabel="Button -3DFriends">
+                    <rect key="frame" x="197" y="505" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrB-CS-T37" userLabel="Button - LolID">
+                    <rect key="frame" x="558" y="415" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLn-wO-jzz" userLabel="Button - skypeID">
+                    <rect key="frame" x="493" y="505" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC6-js-5Je" userLabel="Button - SteamID">
+                    <rect key="frame" x="558" y="235" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stanislav" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bD-sm-wJB" userLabel="Label - username">
+                    <rect key="frame" x="24" y="-116" width="84" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Member Since" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foK-5Y-GlE">
+                    <rect key="frame" x="62" y="-94" width="68" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cra-NM-2CH" userLabel="Button -Gamertag">
+                    <rect key="frame" x="132" y="235" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1da-cN-OCF" userLabel="Button - TwitchID">
+                    <rect key="frame" x="605" y="325" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VL-eT-MWF" userLabel="Button - settings">
+                    <rect key="frame" x="698" y="130" width="50" height="50"/>
+                    <state key="normal" title="Button" image="setting_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressSettingsBtn:" destination="-1" eventType="touchUpInside" id="4RQ-Sm-GQr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTo-jr-LHN" userLabel="Button - PNSID">
+                    <rect key="frame" x="89" y="325" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7V-cZ-kTm" userLabel="Button - battleID">
+                    <rect key="frame" x="197" y="145" width="87" height="100"/>
+                    <state key="normal" title=" " backgroundImage="picture_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3VU-ZV-JxC">
+                    <rect key="frame" x="0.0" y="632" width="768" height="392"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8BS-Qx-cfO"/>
+                        <outlet property="delegate" destination="-1" id="OeP-gk-mQ1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bubble_btn.png" width="46" height="45"/>
+        <image name="header_bar.png" width="750" height="135"/>
+        <image name="mark.png" width="103" height="118"/>
+        <image name="menu_btn.png" width="45" height="39"/>
+        <image name="picture_bg.png" width="174" height="202"/>
+        <image name="search_btn.png" width="50" height="48"/>
+        <image name="setting_btn.png" width="51" height="50"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9FD8ED00-B903-471D-9019-2B01E50630CD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GameHouseUniverse</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>46E6ED008B80CC3C40FF8C8F5EA790DD8369F4E4</key>
+		<string>https://github.com/ckovalik/GHUmobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameHouseUniverse/GameHouseUniverse.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>46E6ED008B80CC3C40FF8C8F5EA790DD8369F4E4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ckovalik/GHUmobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>46E6ED008B80CC3C40FF8C8F5EA790DD8369F4E4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>46E6ED008B80CC3C40FF8C8F5EA790DD8369F4E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GHUmobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>

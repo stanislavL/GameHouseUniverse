@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedViewController">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="USR-r3-8wJ"/>
+                <outlet property="feedTable" destination="4sQ-GS-UUY" id="yo7-1G-mKu"/>
+                <outlet property="postButton" destination="svv-at-jnQ" id="T8W-kf-eu3"/>
+                <outlet property="searchButton" destination="voW-KU-A9w" id="Q0C-xe-hjL"/>
+                <outlet property="segment" destination="e7J-fY-MC0" id="FFg-Tc-3wk"/>
+                <outlet property="teamButton" destination="HQD-27-e6d" id="avh-ih-Bom"/>
+                <outlet property="view" destination="2ht-KY-ToK" id="AHa-v2-OLy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2ht-KY-ToK">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-4D-BE4" userLabel="Image View - topbar">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.40619609400000001" blue="0.1898925933" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="button_back_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="wcJ-o0-ADS">
+                            <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-6J-Bzf" userLabel="Button - message">
+                            <rect key="frame" x="237" y="19" width="25" height="25"/>
+                            <state key="normal" image="bubble_btn.png">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwl-hJ-5oC" userLabel="Button - menu">
+                            <rect key="frame" x="7" y="22" width="25" height="20"/>
+                            <state key="normal" title=" " image="menu_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressMenuBtn:" destination="-1" eventType="touchUpInside" id="cf4-Yf-2xo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voW-KU-A9w" userLabel="Button - search">
+                            <rect key="frame" x="280" y="19" width="25" height="25"/>
+                            <state key="normal" title="Button" image="search_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressSearchBtn:" destination="-1" eventType="touchUpInside" id="AFN-ND-Ovz"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teambuilder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="end-IQ-PxH">
+                            <rect key="frame" x="100" y="22" width="120" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svv-at-jnQ" userLabel="Button - newpost">
+                            <rect key="frame" x="14" y="528" width="140" height="30"/>
+                            <state key="normal" title=" " backgroundImage="new_post_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressPostBtn:" destination="-1" eventType="touchUpInside" id="Oce-gw-aa0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQD-27-e6d" userLabel="Button - newteambuilder">
+                            <rect key="frame" x="167" y="528" width="140" height="30"/>
+                            <state key="normal" title=" " backgroundImage="new_teambuilder_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressTeamBtn:" destination="-1" eventType="touchUpInside" id="fUy-5a-PfL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Vu-Bk-nWl" userLabel="Button - filter">
+                            <rect key="frame" x="8" y="108" width="25" height="25"/>
+                            <state key="normal" title=" " backgroundImage="filter_image.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Filter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nK8-al-mzE">
+                            <rect key="frame" x="41" y="110" width="60" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(All GameID)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wG4-F9-LG1">
+                            <rect key="frame" x="102" y="111" width="100" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4sQ-GS-UUY">
+                            <rect key="frame" x="0.0" y="139" width="320" height="379"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e7J-fY-MC0">
+                            <rect key="frame" x="14" y="66" width="293" height="29"/>
+                            <segments>
+                                <segment title="Feed"/>
+                                <segment title="Messenger"/>
+                                <segment title="Archive"/>
+                            </segments>
+                            <connections>
+                                <action selector="didPressedSegment:" destination="-1" eventType="valueChanged" id="wqd-fH-MhQ"/>
+                            </connections>
+                        </segmentedControl>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badg_number_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ghr-7Z-cVk">
+                            <rect key="frame" x="81" y="57" width="20" height="20"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE7-yu-Sfq">
+                            <rect key="frame" x="81" y="59" width="20" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="483" y="517"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="badg_number_bg.png" width="36" height="36"/>
+        <image name="bubble_btn.png" width="46" height="45"/>
+        <image name="button_back_image.png" width="750" height="114"/>
+        <image name="filter_image.png" width="43" height="43"/>
+        <image name="header_bar.png" width="750" height="135"/>
+        <image name="menu_btn.png" width="45" height="39"/>
+        <image name="new_post_btn.png" width="327" height="74"/>
+        <image name="new_teambuilder_btn.png" width="327" height="74"/>
+        <image name="search_btn.png" width="50" height="48"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

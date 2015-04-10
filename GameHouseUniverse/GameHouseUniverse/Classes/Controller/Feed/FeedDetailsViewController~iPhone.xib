@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedDetailsViewController">
+            <connections>
+                <outlet property="cancelPostBtn" destination="12y-gA-dZE" id="m4q-dX-mKk"/>
+                <outlet property="contentTable" destination="jN1-oi-Vzd" id="wnm-Iu-qkk"/>
+                <outlet property="deletePostBtn" destination="ggY-Qp-R37" id="ti4-K0-7xm"/>
+                <outlet property="menuBtn" destination="USr-cM-ion" id="dul-3i-Al3"/>
+                <outlet property="messageBtn" destination="0JM-K3-jAB" id="Kc8-yi-6r0"/>
+                <outlet property="postBtn" destination="DhK-c8-Fyy" id="MFj-qT-2Zr"/>
+                <outlet property="searchBtn" destination="Vb2-Ug-tI4" id="BRE-eF-8rY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="wfu-xT-2Pw" userLabel="Image View - topbar">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.40619609400000001" blue="0.1898925933" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="button_back_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-qe-ikk">
+                    <rect key="frame" x="0.0" y="381" width="320" height="144"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JM-K3-jAB" userLabel="Button - message">
+                    <rect key="frame" x="237" y="19" width="25" height="25"/>
+                    <state key="normal" image="bubble_btn.png">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressMessageBtn:" destination="-1" eventType="touchUpInside" id="agS-t2-6qS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vb2-Ug-tI4" userLabel="Button - search">
+                    <rect key="frame" x="280" y="19" width="25" height="25"/>
+                    <state key="normal" title="Button" image="search_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressSearchBtn:" destination="-1" eventType="touchUpInside" id="izv-QA-E0M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USr-cM-ion" userLabel="Button - menu">
+                    <rect key="frame" x="20" y="22" width="25" height="20"/>
+                    <state key="normal" title=" " image="menu_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressMenuBtn:" destination="-1" eventType="touchUpInside" id="07R-92-fED"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jN1-oi-Vzd">
+                    <rect key="frame" x="0.0" y="50" width="320" height="322"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Messenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skJ-qQ-wZe">
+                    <rect key="frame" x="100" y="22" width="120" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggY-Qp-R37">
+                    <rect key="frame" x="0.0" y="525" width="320" height="43"/>
+                    <state key="normal" title=" Delete These" backgroundImage="activeBtn_bg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressDeletePostBtn:" destination="-1" eventType="touchUpInside" id="fqW-k0-0Z3"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="description_teambuilder_textfiled_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="iPL-Qa-mTH">
+                    <rect key="frame" x="14" y="385" width="293" height="77"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Type your post here" translatesAutoresizingMaskIntoConstraints="NO" id="4og-zk-Ybl">
+                    <rect key="frame" x="20" y="392" width="280" height="64"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12y-gA-dZE" userLabel="Button - cancelPost">
+                    <rect key="frame" x="170" y="492" width="60" height="20"/>
+                    <state key="normal" title=" " backgroundImage="cancel_post_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressCancelPostBtn:" destination="-1" eventType="touchUpInside" id="jv1-O7-eGj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhK-c8-Fyy" userLabel="Button - post">
+                    <rect key="frame" x="245" y="492" width="60" height="20"/>
+                    <state key="normal" title=" " backgroundImage="post_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPresPostBtn:" destination="-1" eventType="touchUpInside" id="TeV-DK-KL4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="activeBtn_bg.png" width="229" height="76"/>
+        <image name="bubble_btn.png" width="46" height="45"/>
+        <image name="button_back_image.png" width="750" height="114"/>
+        <image name="cancel_post_bg.png" width="129" height="50"/>
+        <image name="description_teambuilder_textfiled_image.png" width="682" height="273"/>
+        <image name="header_bar.png" width="750" height="135"/>
+        <image name="menu_btn.png" width="45" height="39"/>
+        <image name="post_btn.png" width="129" height="50"/>
+        <image name="search_btn.png" width="50" height="48"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
